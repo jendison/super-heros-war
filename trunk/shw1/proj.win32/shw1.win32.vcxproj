@@ -46,7 +46,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\Classes;$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\Classes;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\cocos2dx;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\cocos2dx\include;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\cocos2dx\kazmath\include;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\cocos2dx\platform\win32;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\cocos2dx\platform\third_party\win32;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\cocos2dx\platform\third_party\win32\OGLES;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\CocosDenshion\include;F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\cocos2dx\layers_scenes_transitions_nodes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
@@ -62,7 +62,7 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);F:\zhangliming\dev\cocos2d-2.1rc0-x-2.1.3\Debug.win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
@@ -133,12 +133,42 @@
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\layer_battleAction.h" />
+    <ClInclude Include="..\Classes\layer_battlemap.h" />
+    <ClInclude Include="..\Classes\layer_herosinfo.h" />
+    <ClInclude Include="..\Classes\layer_interview.h" />
+    <ClInclude Include="..\Classes\layer_loading.h" />
+    <ClInclude Include="..\Classes\layer_logo.h" />
+    <ClInclude Include="..\Classes\layer_prepare.h" />
+    <ClInclude Include="..\Classes\layer_story.h" />
+    <ClInclude Include="..\Classes\scenemgr.h" />
+    <ClInclude Include="..\Classes\scene_battle.h" />
+    <ClInclude Include="..\Classes\scene_interview.h" />
+    <ClInclude Include="..\Classes\scene_logo.h" />
+    <ClInclude Include="..\Classes\scene_prepare.h" />
+    <ClInclude Include="..\Classes\scene_story.h" />
+    <ClInclude Include="..\Classes\sprite_hero.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\layer_battleAction.cpp" />
+    <ClCompile Include="..\Classes\layer_battlemap.cpp" />
+    <ClCompile Include="..\Classes\layer_herosinfo.cpp" />
+    <ClCompile Include="..\Classes\layer_interview.cpp" />
+    <ClCompile Include="..\Classes\layer_loading.cpp" />
+    <ClCompile Include="..\Classes\layer_logo.cpp" />
+    <ClCompile Include="..\Classes\layer_prepare.cpp" />
+    <ClCompile Include="..\Classes\layer_story.cpp" />
+    <ClCompile Include="..\Classes\scenemgr.cpp" />
+    <ClCompile Include="..\Classes\scene_battle.cpp" />
+    <ClCompile Include="..\Classes\scene_interview.cpp" />
+    <ClCompile Include="..\Classes\scene_logo.cpp" />
+    <ClCompile Include="..\Classes\scene_prepare.cpp" />
+    <ClCompile Include="..\Classes\scene_story.cpp" />
+    <ClCompile Include="..\Classes\sprite_hero.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
