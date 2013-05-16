@@ -7,6 +7,8 @@
 
 class SCENE_INTERVIEW : public cocos2d::CCScene
 {
+public:
+    static SCENE_INTERVIEW *CreateScene();
 
 };
 

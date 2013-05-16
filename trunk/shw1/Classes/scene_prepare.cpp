@@ -11,7 +11,7 @@ SCENE_PREPARE *SCENE_PREPARE::CreateScene()
     if (NULL == pLayer)
         return NULL;
 
-    SCENE_PREPARE *pScene = CreateScene();
+    SCENE_PREPARE *pScene = (SCENE_PREPARE *)create();
     if (NULL == pScene)
     {
         delete pLayer;

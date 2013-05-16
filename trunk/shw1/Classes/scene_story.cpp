@@ -11,7 +11,7 @@ SCENE_STORY *SCENE_STORY::CreateScene()
     if (NULL == pLayer)
         return NULL;
 
-    SCENE_STORY *pScene = CreateScene();
+    SCENE_STORY *pScene = (SCENE_STORY *)create();
     if (NULL == pScene)
     {
         delete pLayer;
